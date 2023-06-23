@@ -1,4 +1,4 @@
-package homework8_1;
+package homework8_1.task1;
 
 public class MainPhone {
     public static void main(String[] args) {
