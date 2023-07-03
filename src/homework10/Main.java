@@ -21,7 +21,7 @@ public class Main {
         StringDoc.doubleLetter(str2);
         System.out.println();
         System.out.println("______task3______");
-        StringDoc.minMaxWord(str3);
+        StringDoc.minMaxWords(str3);
 
     }
 }

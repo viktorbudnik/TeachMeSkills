@@ -77,7 +77,7 @@ public class StringDoc {
         }
     }
 
-    public static void minMaxWord(String str3) {
+    public static void minMaxWords(String str3) {
         String[] strings = str3.split(" ");
         String max = strings[0];
         String min = strings[0];
