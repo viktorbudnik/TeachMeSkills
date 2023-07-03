@@ -40,38 +40,56 @@ public class StringDoc {
     }
 
     public static void stringBuilderLetters(String str) {
-        StringBuilder sb = new StringBuilder("Letters:"+str.toUpperCase());
+        StringBuilder sb = new StringBuilder("Letters:" + str.toUpperCase());
         for (int i = 0; i < sb.length(); i++) {
-            if (Character.isLetter(sb.charAt(i))||sb.charAt(i)==':')
+            if (Character.isLetter(sb.charAt(i)) || sb.charAt(i) == ':')
                 System.out.print(sb.charAt(i));
 
         }
     }
-    public static void ABC(String str){
-        str=str.toLowerCase();
-        if (str.contains("abc")){
+
+    public static void ABC(String str) {
+        str = str.toLowerCase();
+        if (str.contains("abc")) {
             System.out.println("true");
-        }else
+        } else
             System.out.println("false");
     }
-    public static void startWith555(String str){
-        if (str.startsWith("555",0)){
+
+    public static void startWith555(String str) {
+        if (str.startsWith("555", 0)) {
             System.out.println("true");
-        }else
+        } else
             System.out.println("false");
     }
-    public static void endWith1a2b(String str){
-        if(str.endsWith("1a2b")){
+
+    public static void endWith1a2b(String str) {
+        if (str.endsWith("1a2b")) {
             System.out.println("true");
-        }else
+        } else
             System.out.println("false");
     }
+
     public static void doubleLetter(String str2) {
         for (int i = 0; i < str2.length(); i++) {
             System.out.print(str2.charAt(i));
             System.out.print(str2.charAt(i));
         }
-
     }
+
+    public static void maxWord(String str3) {
+        String[] strings = str3.split(" ");
+        String max = strings[0];
+        String min = strings[0];
+        for (String string : strings)
+            if (string.length() >= max.length())
+                max = string;
+            else if (string.length() <= min.length())
+                min = string;
+        System.out.println("max: " + max + "\nmin: " + min);
+    }
+
 }
+
+
 
